@@ -1,0 +1,6 @@
+V(L):|-30-[descriptionHintLabel(70)]-50-[descriptionInputView(>=50)]-(>=100)-[submitButton]
+H(T):|-10-[descriptionHintLabel(>=1)]-20-[previewImageView(65)]-10-|
+H(CY):|-60-[submitButton]-60-|
+V(CX):[submitButton(30)]
+V(CX):[previewImageView(65)]
+H(B):|-10-[descriptionInputView]-10-|

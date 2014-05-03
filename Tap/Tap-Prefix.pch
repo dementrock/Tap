@@ -1,0 +1,25 @@
+//
+// Prefix header for all source files of the 'MiniMath' target in the 'MiniMath' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+#endif
+
+#define PEG_PUSH_TAG(type, value) [self.assembly push: [NSDictionary dictionaryWithObjects: @[type, value] forKeys: @[@"type", @"value"]]]
+
+#define PEG_PUSH_FENCE(fenceName) [self.assembly push: (PEG_FENCE(fenceName))]
+
+#define PEG_FENCE(fenceName) [NSString stringWithFormat:@"FENCE:%@", fenceName]
+
+#define PEG_DICT(...) @{__VA_ARGS__}
+
+#define PEG_REVERSE_ABOVE(x) [[[self.assembly objectsAbove:x] reverseObjectEnumerator] allObjects]
