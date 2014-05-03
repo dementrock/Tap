@@ -7,9 +7,8 @@
 //
 
 #import "TAPSellViewController.h"
-#import "TAPSellView.h"
-#import "TemplateParser.h"
-#import "TemplateEngine.h"
+//#import "TAPSellView.h"
+#import "UIView+TemplateExtension.h"
 #import <PEGKit/PEGKit.h>
 #import <JSONKit.h>
 
@@ -30,40 +29,12 @@
 }
 
 - (void) loadView {
-    self.view = (TAPSellView*) [self createFullScreenViewWithClass:[TAPSellView class]];
-    
+    self.view = [[UIView alloc] initWithTemplate:@"sell"];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    TemplateParser *parser = [[TemplateParser alloc] init];
-    
-    //NSString* content = @"Button.sell#haha\n";
-    
-    //NSString* content = @"Button.sell#haha\n  Button\n";
-    
-    
-    NSString* content = [NSString stringWithContentsOfFile:@"/Users/dementrock/coding/Tap/Tap/sell.tpl" encoding:NSUTF8StringEncoding error:nil];
-    
-    NSLog(@"content:\n%@", content);
-    
-    TemplateEngine *templateEngine = [[TemplateEngine alloc] init];
-    NSString* preparsedContent = [templateEngine preParseFromString:content];
-    
-    NSLog(@"preparsed content:\n%@", preparsedContent);
-    
-    PKAssembly *result = [parser parseString:preparsedContent error:nil];
-    NSArray *stack = [result objectsAbove:nil];
-    NSLog(@"stack: %@", stack);
-    NSLog(@"stack json: %@", [stack JSONStringWithOptions:JKSerializeOptionPretty error:nil]);
-    NSLog(@"stack size: %d", stack.count);
-    
-    //NSLog(@"result: %@", result);
-    
-    
-
-    // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

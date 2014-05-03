@@ -1,3 +1,3 @@
-TextField#primaryTextField(text=model.syncValue)
-TextField#secondaryTextField(text=model.syncValue)
-Label#displayLabel(text=model.syncValue)
+TextView#primaryTextField(text=syncValue)
+TextView#secondaryTextField(text=syncValue)
+Label#displayLabel(text=syncValue)

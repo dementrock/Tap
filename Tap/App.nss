@@ -6,11 +6,15 @@ Button {
 }
 
 Label {
-    font-color: white;
+    font-color: black;
     font-size:13;
-    background-color: clear;
+    background-color: gray;
     text-align: left;
     vertical-align:top;
+}
+
+TextView {
+    background-color: white;
 }
 
 Window {

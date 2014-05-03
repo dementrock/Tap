@@ -12,7 +12,7 @@
 		305D348D19146E1F00FF3296 /* Tap-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 305D347919146E1F00FF3296 /* Tap-Info.plist */; };
 		305D348E19146E1F00FF3296 /* TAPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 305D347C19146E1F00FF3296 /* TAPAppDelegate.m */; };
 		305D348F19146E1F00FF3296 /* TAPSellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 305D347E19146E1F00FF3296 /* TAPSellView.m */; };
-		305D349019146E1F00FF3296 /* TAPSellView.vfl in Resources */ = {isa = PBXBuildFile; fileRef = 305D347F19146E1F00FF3296 /* TAPSellView.vfl */; };
+		305D349019146E1F00FF3296 /* TapSellView.vfl in Resources */ = {isa = PBXBuildFile; fileRef = 305D347F19146E1F00FF3296 /* TapSellView.vfl */; };
 		305D349119146E1F00FF3296 /* TAPSellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 305D348119146E1F00FF3296 /* TAPSellViewController.m */; };
 		305D349219146E1F00FF3296 /* TAPUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 305D348319146E1F00FF3296 /* TAPUIViewController.m */; };
 		305D349319146E1F00FF3296 /* test.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 305D348419146E1F00FF3296 /* test.JPG */; };
@@ -26,7 +26,10 @@
 		305D34A419146F3500FF3296 /* App.nss in Resources */ = {isa = PBXBuildFile; fileRef = 305D34A319146F3500FF3296 /* App.nss */; };
 		305D34AC1914744A00FF3296 /* TemplateParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 305D34AB1914744A00FF3296 /* TemplateParser.m */; };
 		30B50ABD1914CDF900E8F19B /* sell.tpl in Resources */ = {isa = PBXBuildFile; fileRef = 30B50ABC1914CDF900E8F19B /* sell.tpl */; };
-		30D08E6E1914C1E300F24E1C /* TemplateEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D08E6D1914C1E300F24E1C /* TemplateEngine.m */; };
+		30B50AC01914FED100E8F19B /* TemplateEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B50ABF1914FED100E8F19B /* TemplateEngine.m */; };
+		30B50AE51915A81C00E8F19B /* UIView+TemplateExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B50AE41915A81C00E8F19B /* UIView+TemplateExtension.m */; };
+		30B50AE91915AE0100E8F19B /* UIView+LayoutExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B50AE81915AE0100E8F19B /* UIView+LayoutExtension.m */; };
+		30B50AF11915AF8A00E8F19B /* sell.vfl in Resources */ = {isa = PBXBuildFile; fileRef = 30B50AF01915AF8A00E8F19B /* sell.vfl */; };
 		35A382B8002C4D6590A1AB13 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B96F8957024CD2AFB804AC /* libPods.a */; };
 		D317C1AB18D1FE720036BE75 /* libPEGKitIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D317C1AA18D1FE6B0036BE75 /* libPEGKitIOS.a */; };
 		D38D7DCE172F543600DFDB23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38D7DCD172F543600DFDB23 /* UIKit.framework */; };
@@ -90,7 +93,7 @@
 		305D347C19146E1F00FF3296 /* TAPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TAPAppDelegate.m; path = Tap/TAPAppDelegate.m; sourceTree = SOURCE_ROOT; };
 		305D347D19146E1F00FF3296 /* TAPSellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAPSellView.h; path = Tap/TAPSellView.h; sourceTree = SOURCE_ROOT; };
 		305D347E19146E1F00FF3296 /* TAPSellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TAPSellView.m; path = Tap/TAPSellView.m; sourceTree = SOURCE_ROOT; };
-		305D347F19146E1F00FF3296 /* TAPSellView.vfl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TAPSellView.vfl; path = Tap/TAPSellView.vfl; sourceTree = SOURCE_ROOT; };
+		305D347F19146E1F00FF3296 /* TapSellView.vfl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TapSellView.vfl; path = Tap/TapSellView.vfl; sourceTree = SOURCE_ROOT; };
 		305D348019146E1F00FF3296 /* TAPSellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAPSellViewController.h; path = Tap/TAPSellViewController.h; sourceTree = SOURCE_ROOT; };
 		305D348119146E1F00FF3296 /* TAPSellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TAPSellViewController.m; path = Tap/TAPSellViewController.m; sourceTree = SOURCE_ROOT; };
 		305D348219146E1F00FF3296 /* TAPUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAPUIViewController.h; path = Tap/TAPUIViewController.h; sourceTree = SOURCE_ROOT; };
@@ -109,8 +112,14 @@
 		305D34AA1914744A00FF3296 /* TemplateParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemplateParser.h; path = Tap/TemplateParser.h; sourceTree = SOURCE_ROOT; };
 		305D34AB1914744A00FF3296 /* TemplateParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TemplateParser.m; path = Tap/TemplateParser.m; sourceTree = SOURCE_ROOT; };
 		30B50ABC1914CDF900E8F19B /* sell.tpl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sell.tpl; path = Tap/sell.tpl; sourceTree = SOURCE_ROOT; };
-		30D08E6C1914C1E300F24E1C /* TemplateEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemplateEngine.h; sourceTree = SOURCE_ROOT; };
-		30D08E6D1914C1E300F24E1C /* TemplateEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemplateEngine.m; sourceTree = SOURCE_ROOT; };
+		30B50ABE1914FED100E8F19B /* TemplateEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemplateEngine.h; path = Tap/TemplateEngine.h; sourceTree = SOURCE_ROOT; };
+		30B50ABF1914FED100E8F19B /* TemplateEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TemplateEngine.m; path = Tap/TemplateEngine.m; sourceTree = SOURCE_ROOT; };
+		30B50AE31915A81C00E8F19B /* UIView+TemplateExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+TemplateExtension.h"; path = "Tap/UIView+TemplateExtension.h"; sourceTree = SOURCE_ROOT; };
+		30B50AE41915A81C00E8F19B /* UIView+TemplateExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+TemplateExtension.m"; path = "Tap/UIView+TemplateExtension.m"; sourceTree = SOURCE_ROOT; };
+		30B50AE61915ABA600E8F19B /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Tap/Constants.h; sourceTree = SOURCE_ROOT; };
+		30B50AE71915AE0100E8F19B /* UIView+LayoutExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+LayoutExtension.h"; path = "Tap/UIView+LayoutExtension.h"; sourceTree = SOURCE_ROOT; };
+		30B50AE81915AE0100E8F19B /* UIView+LayoutExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+LayoutExtension.m"; path = "Tap/UIView+LayoutExtension.m"; sourceTree = SOURCE_ROOT; };
+		30B50AF01915AF8A00E8F19B /* sell.vfl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sell.vfl; path = Tap/sell.vfl; sourceTree = SOURCE_ROOT; };
 		D317C19518D1FC8D0036BE75 /* PEGKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PEGKit.xcodeproj; path = lib/pegkit/PEGKit.xcodeproj; sourceTree = "<group>"; };
 		D38D7DCA172F543600DFDB23 /* Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38D7DCD172F543600DFDB23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -190,15 +199,21 @@
 				305D347A19146E1F00FF3296 /* Tap-Prefix.pch */,
 				305D347B19146E1F00FF3296 /* TAPAppDelegate.h */,
 				305D347C19146E1F00FF3296 /* TAPAppDelegate.m */,
+				30B50AE31915A81C00E8F19B /* UIView+TemplateExtension.h */,
+				30B50AE41915A81C00E8F19B /* UIView+TemplateExtension.m */,
+				30B50AE71915AE0100E8F19B /* UIView+LayoutExtension.h */,
+				30B50AE81915AE0100E8F19B /* UIView+LayoutExtension.m */,
 				305D347D19146E1F00FF3296 /* TAPSellView.h */,
 				305D347E19146E1F00FF3296 /* TAPSellView.m */,
-				305D347F19146E1F00FF3296 /* TAPSellView.vfl */,
+				30B50ABE1914FED100E8F19B /* TemplateEngine.h */,
+				30B50ABF1914FED100E8F19B /* TemplateEngine.m */,
+				30B50AE61915ABA600E8F19B /* Constants.h */,
+				305D347F19146E1F00FF3296 /* TapSellView.vfl */,
+				30B50AF01915AF8A00E8F19B /* sell.vfl */,
 				305D34AA1914744A00FF3296 /* TemplateParser.h */,
 				305D34AB1914744A00FF3296 /* TemplateParser.m */,
 				305D348019146E1F00FF3296 /* TAPSellViewController.h */,
 				305D348119146E1F00FF3296 /* TAPSellViewController.m */,
-				30D08E6C1914C1E300F24E1C /* TemplateEngine.h */,
-				30D08E6D1914C1E300F24E1C /* TemplateEngine.m */,
 				305D348219146E1F00FF3296 /* TAPUIViewController.h */,
 				305D348319146E1F00FF3296 /* TAPUIViewController.m */,
 				30B50ABC1914CDF900E8F19B /* sell.tpl */,
@@ -256,7 +271,7 @@
 			attributes = {
 				CLASSPREFIX = Tap;
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "Todd Ditchendorf";
+				ORGANIZATIONNAME = "Sellegit Inc";
 			};
 			buildConfigurationList = D38D7DC5172F543600DFDB23 /* Build configuration list for PBXProject "Tap" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -325,11 +340,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				305D34A419146F3500FF3296 /* App.nss in Resources */,
-				305D349019146E1F00FF3296 /* TAPSellView.vfl in Resources */,
+				305D349019146E1F00FF3296 /* TapSellView.vfl in Resources */,
 				305D34A219146EA800FF3296 /* InfoPlist.strings in Resources */,
 				305D349D19146E9300FF3296 /* Default-568h@2x.png in Resources */,
 				305D349F19146E9300FF3296 /* Default@2x.png in Resources */,
 				305D348D19146E1F00FF3296 /* Tap-Info.plist in Resources */,
+				30B50AF11915AF8A00E8F19B /* sell.vfl in Resources */,
 				30B50ABD1914CDF900E8F19B /* sell.tpl in Resources */,
 				305D349319146E1F00FF3296 /* test.JPG in Resources */,
 				305D349719146E7E00FF3296 /* Tap-Info.plist in Resources */,
@@ -378,7 +394,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				305D349919146E8900FF3296 /* main.m in Sources */,
-				30D08E6E1914C1E300F24E1C /* TemplateEngine.m in Sources */,
+				30B50AC01914FED100E8F19B /* TemplateEngine.m in Sources */,
+				30B50AE91915AE0100E8F19B /* UIView+LayoutExtension.m in Sources */,
 				305D348F19146E1F00FF3296 /* TAPSellView.m in Sources */,
 				305D34AC1914744A00FF3296 /* TemplateParser.m in Sources */,
 				305D349119146E1F00FF3296 /* TAPSellViewController.m in Sources */,
@@ -387,6 +404,7 @@
 				305D348E19146E1F00FF3296 /* TAPAppDelegate.m in Sources */,
 				305D348C19146E1F00FF3296 /* PropertyInspector.m in Sources */,
 				305D348719146E1F00FF3296 /* LUISettings.m in Sources */,
+				30B50AE51915A81C00E8F19B /* UIView+TemplateExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,7 +488,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tap/Tap-Prefix.pch";
-				HEADER_SEARCH_PATHS = lib/pegkit/include;
+				HEADER_SEARCH_PATHS = (
+					lib/pegkit/include,
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "Tap/Tap-Info.plist";
 				PRODUCT_NAME = Tap;
 				WRAPPER_EXTENSION = app;
@@ -483,7 +504,10 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tap/Tap-Prefix.pch";
-				HEADER_SEARCH_PATHS = lib/pegkit/include;
+				HEADER_SEARCH_PATHS = (
+					lib/pegkit/include,
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "Tap/Tap-Info.plist";
 				PRODUCT_NAME = Tap;
 				WRAPPER_EXTENSION = app;
