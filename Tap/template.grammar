@@ -47,7 +47,7 @@ viewElement
 }
  = tag+ attrList?;
 
-tag = viewTag | viewClass | viewId;
+tag = viewClass | viewId | viewTag;
 
 viewClass = '.'! Word {
   PEG_PUSH_TAG(@"viewClass", POP_STR());
@@ -101,7 +101,9 @@ variableBindingValue
 }
 = Word ('.' Word)*;
 
-quotedStringValue = QuotedString;
+quotedStringValue = QuotedString {
+  PEG_PUSH_TAG(@"constantBindingValue", POP_STR());
+};
 
 newline = '{'! 'NEWLINE'! '}'!;
 

@@ -1,11 +1,10 @@
-
 Button {
     background-color: #4191ca;
     font-color: #fefefe;
     font-size: 13;
 }
 
-Label {
+displayLabel {
     font-color: black;
     font-size:13;
     background-color: gray;
@@ -14,6 +13,10 @@ Label {
 }
 
 TextView {
+    background-color: white;
+}
+
+textField {
     background-color: white;
 }
 

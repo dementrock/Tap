@@ -7,13 +7,16 @@
 //
 
 #import "TAPSellViewController.h"
-//#import "TAPSellView.h"
-#import "UIView+TemplateExtension.h"
+#import "TAPSellViewModel.h"
+#import "TemplateExtension/UIView+TemplateExtension.h"
 #import <PEGKit/PEGKit.h>
 #import <JSONKit.h>
 
 
 @interface TAPSellViewController ()
+
+@property (strong, nonatomic) TAPSellViewModel *viewModel;
+
 @end
 
 
@@ -29,7 +32,8 @@
 }
 
 - (void) loadView {
-    self.view = [[UIView alloc] initWithTemplate:@"sell"];
+    self.viewModel = [[TAPSellViewModel alloc] init];
+    self.view = [[UIView alloc] initWithTemplate:@"sell" viewModel:self.viewModel];
 }
 
 - (void)viewDidLoad

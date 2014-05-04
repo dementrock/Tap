@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    [NUISettings setAutoUpdatePath:@"/Users/dementrock/Documents/Tap/Tap/App.nss"];
+    [NUISettings setAutoUpdatePath:@"/Users/dementrock/coding/Tap/Tap/App.nss"];
     
     [NUISettings initWithStylesheet:@"App"];
     

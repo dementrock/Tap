@@ -84,8 +84,9 @@
         self.startRuleName = @"template";
         self.tokenKindTab[@"#"] = @(TEMPLATEPARSER_TOKEN_KIND_POUND);
         self.tokenKindTab[@"NEWLINE"] = @(TEMPLATEPARSER_TOKEN_KIND_NEWLINE);
-        self.tokenKindTab[@"Button"] = @(TEMPLATEPARSER_TOKEN_KIND_BUTTON);
+        self.tokenKindTab[@".Label"] = @(TEMPLATEPARSER_TOKEN_KIND__LABEL);
         self.tokenKindTab[@","] = @(TEMPLATEPARSER_TOKEN_KIND_COMMA);
+        self.tokenKindTab[@"Button"] = @(TEMPLATEPARSER_TOKEN_KIND_BUTTON);
         self.tokenKindTab[@"Label"] = @(TEMPLATEPARSER_TOKEN_KIND_LABEL);
         self.tokenKindTab[@"ImageView"] = @(TEMPLATEPARSER_TOKEN_KIND_IMAGEVIEW);
         self.tokenKindTab[@"INDENT"] = @(TEMPLATEPARSER_TOKEN_KIND_INDENT);
@@ -101,8 +102,9 @@
 
         self.tokenKindNameTab[TEMPLATEPARSER_TOKEN_KIND_POUND] = @"#";
         self.tokenKindNameTab[TEMPLATEPARSER_TOKEN_KIND_NEWLINE] = @"NEWLINE";
-        self.tokenKindNameTab[TEMPLATEPARSER_TOKEN_KIND_BUTTON] = @"Button";
+        self.tokenKindNameTab[TEMPLATEPARSER_TOKEN_KIND__LABEL] = @".Label";
         self.tokenKindNameTab[TEMPLATEPARSER_TOKEN_KIND_COMMA] = @",";
+        self.tokenKindNameTab[TEMPLATEPARSER_TOKEN_KIND_BUTTON] = @"Button";
         self.tokenKindNameTab[TEMPLATEPARSER_TOKEN_KIND_LABEL] = @"Label";
         self.tokenKindNameTab[TEMPLATEPARSER_TOKEN_KIND_IMAGEVIEW] = @"ImageView";
         self.tokenKindNameTab[TEMPLATEPARSER_TOKEN_KIND_INDENT] = @"INDENT";
@@ -342,12 +344,12 @@
 
 - (void)__tag {
     
-    if ([self predicts:TEMPLATEPARSER_TOKEN_KIND_BUTTON, TEMPLATEPARSER_TOKEN_KIND_IMAGEVIEW, TEMPLATEPARSER_TOKEN_KIND_LABEL, TEMPLATEPARSER_TOKEN_KIND_TEXTFIELD, TEMPLATEPARSER_TOKEN_KIND_TEXTVIEW, 0]) {
-        [self viewTag_]; 
-    } else if ([self predicts:TEMPLATEPARSER_TOKEN_KIND_DOT, 0]) {
+    if ([self predicts:TEMPLATEPARSER_TOKEN_KIND_DOT, TEMPLATEPARSER_TOKEN_KIND__LABEL, 0]) {
         [self viewClass_]; 
     } else if ([self predicts:TEMPLATEPARSER_TOKEN_KIND_POUND, 0]) {
         [self viewId_]; 
+    } else if ([self predicts:TEMPLATEPARSER_TOKEN_KIND_BUTTON, TEMPLATEPARSER_TOKEN_KIND_IMAGEVIEW, TEMPLATEPARSER_TOKEN_KIND_LABEL, TEMPLATEPARSER_TOKEN_KIND_TEXTFIELD, TEMPLATEPARSER_TOKEN_KIND_TEXTVIEW, 0]) {
+        [self viewTag_]; 
     } else {
         [self raise:@"No viable alternative found in rule 'tag'."];
     }
@@ -361,14 +363,20 @@
 
 - (void)__viewClass {
     
-    [self match:TEMPLATEPARSER_TOKEN_KIND_DOT discard:YES]; 
-    [self matchWord:NO]; 
-    [self execute:(id)^{
-    
+    if ([self predicts:TEMPLATEPARSER_TOKEN_KIND__LABEL, 0]) {
+        [self match:TEMPLATEPARSER_TOKEN_KIND__LABEL discard:NO]; 
+    } else if ([self predicts:TEMPLATEPARSER_TOKEN_KIND_DOT, 0]) {
+        [self match:TEMPLATEPARSER_TOKEN_KIND_DOT discard:YES]; 
+        [self matchWord:NO]; 
+        [self execute:(id)^{
+        
   PEG_PUSH_TAG(@"viewClass", POP_STR());
   return nil;
 
-    }];
+        }];
+    } else {
+        [self raise:@"No viable alternative found in rule 'viewClass'."];
+    }
 
     [self fireDelegateSelector:@selector(parser:didMatchViewClass:)];
 }
@@ -525,6 +533,11 @@
 - (void)__quotedStringValue {
     
     [self matchQuotedString:NO]; 
+    [self execute:(id)^{
+    
+  PEG_PUSH_TAG(@"constantBindingValue", POP_STR());
+
+    }];
 
     [self fireDelegateSelector:@selector(parser:didMatchQuotedStringValue:)];
 }

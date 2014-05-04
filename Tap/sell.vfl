@@ -1,5 +1,9 @@
-V(L):|-20-[primaryTextField(100)]-20-[secondaryTextField(100)]-20-[displayLabel(100)]
-
+V(L):|-20-[primaryTextField(30)]-20-[secondaryTextField(30)]-20-[displayLabel(30)]
 H(CY):|-10-[primaryTextField]-10-|
 H(CY):|-10-[secondaryTextField]-10-|
 H(CY):|-10-[displayLabel]-10-|
+
+V(L):[displayLabel]-20-[primaryTextField2(30)]-20-[secondaryTextField2(30)]-20-[displayLabel2(30)]
+H(CY):|-10-[primaryTextField2]-10-|
+H(CY):|-10-[secondaryTextField2]-10-|
+H(CY):|-10-[displayLabel2]-10-|
