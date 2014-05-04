@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3002AB841915E5490047A100 /* TAPSellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3002AB831915E5490047A100 /* TAPSellViewModel.m */; };
 		3002AB941915FE370047A100 /* Template.m in Sources */ = {isa = PBXBuildFile; fileRef = 3002AB911915FE370047A100 /* Template.m */; };
 		3002AB951915FE370047A100 /* TemplateViewElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 3002AB931915FE370047A100 /* TemplateViewElement.m */; };
 		3002AB981916042D0047A100 /* TemplateAttributeBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 3002AB971916042D0047A100 /* TemplateAttributeBinding.m */; };
@@ -36,6 +35,7 @@
 		30B50AF11915AF8A00E8F19B /* sell.vfl in Resources */ = {isa = PBXBuildFile; fileRef = 30B50AF01915AF8A00E8F19B /* sell.vfl */; };
 		30D68F7E1916176E001C5D78 /* UILabel+TemplateExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D68F7D1916176E001C5D78 /* UILabel+TemplateExtension.m */; };
 		30D68F811916177D001C5D78 /* UITextField+TemplateExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D68F801916177D001C5D78 /* UITextField+TemplateExtension.m */; };
+		30D68F8419162075001C5D78 /* TAPSellViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D68F8319162075001C5D78 /* TAPSellViewModel.m */; };
 		35A382B8002C4D6590A1AB13 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4B96F8957024CD2AFB804AC /* libPods.a */; };
 		D317C1AB18D1FE720036BE75 /* libPEGKitIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D317C1AA18D1FE6B0036BE75 /* libPEGKitIOS.a */; };
 		D38D7DCE172F543600DFDB23 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38D7DCD172F543600DFDB23 /* UIKit.framework */; };
@@ -89,8 +89,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3002AB821915E5490047A100 /* TAPSellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPSellViewModel.h; sourceTree = SOURCE_ROOT; };
-		3002AB831915E5490047A100 /* TAPSellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPSellViewModel.m; sourceTree = SOURCE_ROOT; };
 		3002AB901915FE370047A100 /* Template.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Template.h; path = Tap/Template/Template.h; sourceTree = SOURCE_ROOT; };
 		3002AB911915FE370047A100 /* Template.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Template.m; path = Tap/Template/Template.m; sourceTree = SOURCE_ROOT; };
 		3002AB921915FE370047A100 /* TemplateViewElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TemplateViewElement.h; path = Tap/Template/TemplateViewElement.h; sourceTree = SOURCE_ROOT; };
@@ -138,6 +136,8 @@
 		30D68F7D1916176E001C5D78 /* UILabel+TemplateExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+TemplateExtension.m"; sourceTree = "<group>"; };
 		30D68F7F1916177D001C5D78 /* UITextField+TemplateExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+TemplateExtension.h"; sourceTree = "<group>"; };
 		30D68F801916177D001C5D78 /* UITextField+TemplateExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+TemplateExtension.m"; sourceTree = "<group>"; };
+		30D68F8219162075001C5D78 /* TAPSellViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAPSellViewModel.h; path = Tap/TAPSellViewModel.h; sourceTree = SOURCE_ROOT; };
+		30D68F8319162075001C5D78 /* TAPSellViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TAPSellViewModel.m; path = Tap/TAPSellViewModel.m; sourceTree = SOURCE_ROOT; };
 		D317C19518D1FC8D0036BE75 /* PEGKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PEGKit.xcodeproj; path = lib/pegkit/PEGKit.xcodeproj; sourceTree = "<group>"; };
 		D38D7DCA172F543600DFDB23 /* Tap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38D7DCD172F543600DFDB23 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -260,10 +260,10 @@
 				305D34AB1914744A00FF3296 /* TemplateParser.m */,
 				305D348019146E1F00FF3296 /* TAPSellViewController.h */,
 				305D348119146E1F00FF3296 /* TAPSellViewController.m */,
-				3002AB821915E5490047A100 /* TAPSellViewModel.h */,
-				3002AB831915E5490047A100 /* TAPSellViewModel.m */,
 				305D348219146E1F00FF3296 /* TAPUIViewController.h */,
 				305D348319146E1F00FF3296 /* TAPUIViewController.m */,
+				30D68F8219162075001C5D78 /* TAPSellViewModel.h */,
+				30D68F8319162075001C5D78 /* TAPSellViewModel.m */,
 				305D348419146E1F00FF3296 /* test.JPG */,
 				305D348519146E1F00FF3296 /* UIView+TAPExtension.h */,
 				305D348619146E1F00FF3296 /* UIView+TAPExtension.m */,
@@ -452,12 +452,12 @@
 				305D349119146E1F00FF3296 /* TAPSellViewController.m in Sources */,
 				305D349419146E1F00FF3296 /* UIView+TAPExtension.m in Sources */,
 				305D349219146E1F00FF3296 /* TAPUIViewController.m in Sources */,
+				30D68F8419162075001C5D78 /* TAPSellViewModel.m in Sources */,
 				3002AB951915FE370047A100 /* TemplateViewElement.m in Sources */,
 				305D348E19146E1F00FF3296 /* TAPAppDelegate.m in Sources */,
 				305D348C19146E1F00FF3296 /* PropertyInspector.m in Sources */,
 				3002AB9C1916105A0047A100 /* UIView+TemplateExtension.m in Sources */,
 				305D348719146E1F00FF3296 /* LUISettings.m in Sources */,
-				3002AB841915E5490047A100 /* TAPSellViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
