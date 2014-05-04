@@ -15,7 +15,6 @@
 		305D348C19146E1F00FF3296 /* PropertyInspector.m in Sources */ = {isa = PBXBuildFile; fileRef = 305D347819146E1F00FF3296 /* PropertyInspector.m */; };
 		305D348D19146E1F00FF3296 /* Tap-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 305D347919146E1F00FF3296 /* Tap-Info.plist */; };
 		305D348E19146E1F00FF3296 /* TAPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 305D347C19146E1F00FF3296 /* TAPAppDelegate.m */; };
-		305D348F19146E1F00FF3296 /* TAPSellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 305D347E19146E1F00FF3296 /* TAPSellView.m */; };
 		305D349019146E1F00FF3296 /* TapSellView.vfl in Resources */ = {isa = PBXBuildFile; fileRef = 305D347F19146E1F00FF3296 /* TapSellView.vfl */; };
 		305D349119146E1F00FF3296 /* TAPSellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 305D348119146E1F00FF3296 /* TAPSellViewController.m */; };
 		305D349219146E1F00FF3296 /* TAPUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 305D348319146E1F00FF3296 /* TAPUIViewController.m */; };
@@ -105,8 +104,6 @@
 		305D347A19146E1F00FF3296 /* Tap-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Tap-Prefix.pch"; path = "Tap/Tap-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		305D347B19146E1F00FF3296 /* TAPAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAPAppDelegate.h; path = Tap/TAPAppDelegate.h; sourceTree = SOURCE_ROOT; };
 		305D347C19146E1F00FF3296 /* TAPAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TAPAppDelegate.m; path = Tap/TAPAppDelegate.m; sourceTree = SOURCE_ROOT; };
-		305D347D19146E1F00FF3296 /* TAPSellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAPSellView.h; path = Tap/TAPSellView.h; sourceTree = SOURCE_ROOT; };
-		305D347E19146E1F00FF3296 /* TAPSellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TAPSellView.m; path = Tap/TAPSellView.m; sourceTree = SOURCE_ROOT; };
 		305D347F19146E1F00FF3296 /* TapSellView.vfl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TapSellView.vfl; path = Tap/TapSellView.vfl; sourceTree = SOURCE_ROOT; };
 		305D348019146E1F00FF3296 /* TAPSellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TAPSellViewController.h; path = Tap/TAPSellViewController.h; sourceTree = SOURCE_ROOT; };
 		305D348119146E1F00FF3296 /* TAPSellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TAPSellViewController.m; path = Tap/TAPSellViewController.m; sourceTree = SOURCE_ROOT; };
@@ -250,8 +247,6 @@
 				3002AB991916105A0047A100 /* TemplateExtension */,
 				30B50AE71915AE0100E8F19B /* UIView+LayoutExtension.h */,
 				30B50AE81915AE0100E8F19B /* UIView+LayoutExtension.m */,
-				305D347D19146E1F00FF3296 /* TAPSellView.h */,
-				305D347E19146E1F00FF3296 /* TAPSellView.m */,
 				3002AB8C1915FB0C0047A100 /* Template */,
 				30B50ABE1914FED100E8F19B /* TemplateBuilder.h */,
 				30B50ABF1914FED100E8F19B /* TemplateBuilder.m */,
@@ -446,7 +441,6 @@
 				30B50AE91915AE0100E8F19B /* UIView+LayoutExtension.m in Sources */,
 				30D68F7E1916176E001C5D78 /* UILabel+TemplateExtension.m in Sources */,
 				30D68F811916177D001C5D78 /* UITextField+TemplateExtension.m in Sources */,
-				305D348F19146E1F00FF3296 /* TAPSellView.m in Sources */,
 				305D34AC1914744A00FF3296 /* TemplateParser.m in Sources */,
 				3002AB941915FE370047A100 /* Template.m in Sources */,
 				305D349119146E1F00FF3296 /* TAPSellViewController.m in Sources */,
